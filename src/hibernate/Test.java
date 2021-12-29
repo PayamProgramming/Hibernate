@@ -30,10 +30,10 @@ public class Test {
         Scanner input = new Scanner(System.in);
         
         ApplicationContext ctx = new ClassPathXmlApplicationContext("spring.xml");
-        Member m = (Member) ctx.getBean("type");
+        hibernate m = (hibernate) ctx.getBean("type");
         
         
-        // Member m = new Member();
+        // hibernate m = new hibernate();
         m.setId(1);
         System.out.println("Type Youre Name");
         String name = input.next();

@@ -1,1 +1,1 @@
-hibernate.Member=javax.persistence.Entity,org.springframework.stereotype.Component
+hibernate.hibernate=javax.persistence.Entity

@@ -9,16 +9,16 @@
     <session-factory>
 
         <!-- Database connection settings -->
-        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/hibernate</property>
-        <property name="connection.username">root</property>
-        <property name="connection.password"></property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/postgres</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">12345</property>
 
         <!-- JDBC connection pool (use the built-in) -->
         <property name="connection.pool_size">1</property>
 
         <!-- SQL dialect -->
-        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
 
         <!-- Disable the second-level cache  -->
         <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
@@ -32,7 +32,7 @@
         <!-- Names the annotated entity class -->
        <!--  <mapping class="Member"/> -->
        
-       <mapping class="hibernate.Member"></mapping>
+       <mapping class="hibernate.hibernate"></mapping>
 
     </session-factory>
 
